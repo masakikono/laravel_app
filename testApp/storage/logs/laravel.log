@@ -1,0 +1,19 @@
+[2020-01-21 06:52:31] local.ERROR: Command "cache:clera" is not defined.
+
+Did you mean one of these?
+    cache:clear
+    cache:forget
+    cache:table {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"cache:clera\" is not defined.
+
+Did you mean one of these?
+    cache:clear
+    cache:forget
+    cache:table at /Users/masakikono/docker_dir/laravel_app/vendor/symfony/console/Application.php:670)
+[stacktrace]
+#0 /Users/masakikono/docker_dir/laravel_app/vendor/symfony/console/Application.php(236): Symfony\\Component\\Console\\Application->find('cache:clera')
+#1 /Users/masakikono/docker_dir/laravel_app/vendor/symfony/console/Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Users/masakikono/docker_dir/laravel_app/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/masakikono/docker_dir/laravel_app/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/masakikono/docker_dir/laravel_app/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

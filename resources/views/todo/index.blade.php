@@ -12,7 +12,7 @@
 <table class="table">
   <thead class="thead-light">
     <tr>
-      <th>やること</th>
+      <th>タスク</th>
       <th>作成日時</th>
       <th>更新日時</th>
       <th></th>

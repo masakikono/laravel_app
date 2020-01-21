@@ -94,7 +94,7 @@ class TodoController extends Controller
         // dd($this->todo->fill($input));
         // returnで返してtodo画面にリダイレクト遷移して処理を終了させる
         // ルートリストからindexメソッド使って作成した全ての情報を取得して表示する
-        return redirect()->to('todo');
+        return redirect()->route('todo.index');
         // redirectorインスタンスを返している
         // dd(redirect()->to('todo'));
     }
@@ -141,7 +141,7 @@ class TodoController extends Controller
         // dd($a);
         $this->todo->find($id)->fill($input)->save();
         // dd($this->todo->find($id)->fill($input));
-        return redirect()->to('todo');
+        return redirect()->route('todo.index');
     }
 
     /**
@@ -153,6 +153,6 @@ class TodoController extends Controller
     public function destroy($id)
     {
         $this->todo->find($id)->delete();
-        return redirect()->to('todo');
+        return redirect()->route('todo.index');
     }
 }

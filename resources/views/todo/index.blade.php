@@ -7,7 +7,7 @@
 <p class="text-right">
   {{-- ルート指定内容を確認すると、web.phpからTodocontrollerのcreateメソッドを使用していることがわかる --}}
   {{-- 下記はURI名を参照して描く方法 --}}
-  <a class="btn btn-success" href="/todo/create">ToDoを追加</a>
+  <a class="btn btn-success" href="/todo/create">新規作成</a>
 </p>
 <table class="table">
   <thead class="thead-light">

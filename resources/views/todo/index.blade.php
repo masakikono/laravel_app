@@ -3,7 +3,7 @@
 {{-- ＠以下で継承方法を指定、sectionは継承可能、変数やデフォルト値は引き継げない --}}
 @section ('content') <!-- 追記 引数名であっていれば、その中身を継承することができる-->
 
-<h1 class="page-header">ToDo一覧</h1>
+<h1 class="page-header">新規作成</h1>
 <p class="text-right">
   {{-- ルート指定内容を確認すると、web.phpからTodocontrollerのcreateメソッドを使用していることがわかる --}}
   {{-- 下記はURI名を参照して描く方法 --}}
@@ -13,7 +13,7 @@
   <thead class="thead-light">
     <tr>
       <th>ID</th>
-      <th>タスク</th>
+      <th>やること</th>
       <th>作成日時</th>
       <th>更新日時</th>
       <th></th>

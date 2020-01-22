@@ -12,6 +12,7 @@
 <table class="table">
   <thead class="thead-light">
     <tr>
+      <th>ID</th>
       <th>タスク</th>
       <th>作成日時</th>
       <th>更新日時</th>
@@ -26,6 +27,7 @@
       {{-- エスケープ処理が必要なため、{{}}カッコを使用している --}}
       {{-- ここでエスケープ処理しないと＜や＞や””などが特別な意味を持つ文字列と認識されてしまうから --}}
       {{-- エスケープ処理とは＝HTML上で特殊文字を表示するための処理 --}}
+      <td class="align-middle">{{ $todo->id }}</td>
       <td class="align-middle">{{ $todo->title }}</td>
       <td class="align-middle">{{ $todo->created_at }}</td>
       <td class="align-middle">{{ $todo->updated_at }}</td>
